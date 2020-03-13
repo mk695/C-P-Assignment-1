@@ -10,7 +10,7 @@ void main()
     for(i=1;i<n;i++)
     { 
         f=f*i;
-        s=s+i;
+        s=s+i/f;
     }
   printf("%d",s);
 }    
