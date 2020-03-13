@@ -2,7 +2,6 @@
  * C Program to Find find Sum of the Series 1/1! + 2/2! + 3/3! + ……1/N!
  */
 #include <stdio.h>
-double sumseries(double);
 void main()
 {
    int n,i,s=0,f=1;
@@ -13,6 +12,6 @@ void main()
         f=f*i;
         s=s+i;
     }
-  printf("&d",s);
+  printf("%d",s);
 }    
     
