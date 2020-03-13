@@ -3,7 +3,7 @@
 
 int main()
 {
-    int Num1, Num2, i, GCD;
+    int Num1, Num2, i, HCF;
 
     printf("Please Enter two integer Values \n");
     scanf("%d %d", &Num1, &Num2);
@@ -11,9 +11,9 @@ int main()
     for(i = 1; i <= Num1 && i <= Num2; i++)
     {
         if(Num1 % i == 0 && Num2 % i == 0)
-            GCD = i;
+            HCF = i;
     }
 
-    printf("GCD of %d and %d is = %d", Num1, Num2, GCD);
+    printf("HCF of %d and %d is = %d", Num1, Num2, HCF);
     return 0;
 }
