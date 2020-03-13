@@ -1,27 +1,22 @@
-/* C Fibonacci series Program using While Loop */
-
+/* C Program to Print Floyd’s Triangle */
 #include <stdio.h>
-int main()
-{
-  int Number, i = 0, Next, First= 0, Second= 1;
 
-  printf("\n Please Enter the Range Number: ");
-  scanf("%d",&Number);
-  
-  while(i < Number) 
-  {
-  	if(i <= 1)
-  	{
-  		Next = i;
-	}
-	else
-	{
-		Next = First + Second;
-		First = Second;
-		Second = Next;
-	}
-    printf("%d \t", Next);
-   	i++;  
-  }
+int main() 
+{
+  int Rows, i,  j, Number = 1;
+
+  printf(" Please Enter the Number of Rows:  ");
+  scanf("%d", &Rows);
+	
+  printf(" \n Printing FLOYD'S Triangle \n \n");
+  for ( i = 1 ; i <= Rows; i++ ) 
+    {
+	for ( j = 1 ; j <= i; j++ ) 
+         {
+	   printf("%d ", Number);
+	   Number++;
+	 }
+	printf("\n");
+     }
   return 0;
 }
