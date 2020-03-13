@@ -3,7 +3,7 @@
 void main()
  {
     float sinvalue,cosvalue,x;
-    printf("\Enter the value:");
+    printf("\nEnter the value:");
     scanf("%f",&x);
     sinvalue=sin(x);
     cosvalue=cos(x);
